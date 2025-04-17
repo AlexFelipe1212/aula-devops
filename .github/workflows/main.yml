@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu_latest
     steps:
       - name: Exibir um texto
-        run: echo "Olá mundo funcionou"
+        run: "@echo 'Olá mundo funcionou'"
