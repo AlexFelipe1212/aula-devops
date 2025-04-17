@@ -18,6 +18,13 @@ jobs:
     steps:
       - name: Passo 1 - Checkout
         uses: actions/checkout@v4
+      - name: Passo 1.1 - Analise estatica
+      - name: Analyze with SonarCloud
+        uses: SonarSource/sonarcloud-github-action@4006f663ecaf1f8093e8e4abb9227f6041f52216
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  
+        with:
+          projectBaseDir: .
       - name: Passo 2 - Configuração do Github Pages
         uses: actions/configure-pages@v5
       - name: Passo 3 - Upload no Servidor
