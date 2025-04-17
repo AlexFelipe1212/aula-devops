@@ -6,7 +6,5 @@ jobs:
   deploy:
     runs-on: ubuntu_latest
     steps:
-      - name: Exibir um texto
-        run: "@echo 'Olá mundo funcionou'"
       - name: Resgatar o código do git
         uses: action/checkout@v4
