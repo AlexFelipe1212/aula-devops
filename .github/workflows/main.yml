@@ -12,7 +12,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://alexfelipe1212.github.io/aula-devops/"
+      url: ${{ steps.deployment.outputs.page_url }}
       
     runs-on: ubuntu-latest
     steps:
